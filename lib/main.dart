@@ -1,8 +1,8 @@
-import 'animex.dart';
+import 'animax.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AnimeX());
+  runApp(const AnimaX());
 }
 
 
