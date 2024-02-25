@@ -1,16 +1,6 @@
-# animex
+# AnimaX
 
-A new Flutter project.
+The best-streaming anime app of the century to entertain you every day.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🎨 System Design
+![System_Design](https://github.com/Animax-App/Animax_Flutter/assets/73137782/ec72895f-9679-4b22-b8df-2e13181735d1)
