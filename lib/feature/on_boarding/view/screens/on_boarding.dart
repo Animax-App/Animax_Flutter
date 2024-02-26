@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/widgets/custom_button.dart';
+import '../widgets/smooth_page_indicator.dart';
+import 'fake_screen.dart';
 import 'first_screen.dart';
 import 'second_screen.dart';
 import 'third_screen.dart';
@@ -12,9 +17,8 @@ class OnBoarding extends StatefulWidget {
   State<OnBoarding> createState() => _OnBoardingState();
 }
 
-final controller = PageController(keepPage: true);
-
 class _OnBoardingState extends State<OnBoarding> {
+  final controller = PageController(keepPage: true);
   final List<Widget> pages = const [
     OnBoardingFirstScreen(),
     OnBoardingSecondScreen(),
@@ -30,10 +34,37 @@ class _OnBoardingState extends State<OnBoarding> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: PageView.builder(
-        itemBuilder: (context, index) => pages[index],
-        itemCount: pages.length,
-        controller: controller,
+      body: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          PageView.builder(
+            itemBuilder: (context, index) => pages[index],
+            itemCount: pages.length,
+            controller: controller,
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 110.0.h),
+            child: PageIndicator(controller: controller),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              bottom: 42.0.h,
+              left: 24.w,
+              right: 24.w,
+            ),
+            child: CustomButton(
+              buttonText: 'Get Started',
+              buttonColor: AppColors.primaryColor,
+              buttonAction: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FakeScreen(),
+                ),
+              ),
+              buttonStyle: AppTextStyles.robotoWhite16Medium,
+            ),
+          ),
+        ],
       ),
     );
   }

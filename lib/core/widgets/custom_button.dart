@@ -17,19 +17,18 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: SizedBox(
-        width: double.infinity,
-        child: MaterialButton(
-          onPressed: buttonAction,
-          color: buttonColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(25.r),
-          ),
-          child: Text(
-            buttonText,
-            style: buttonStyle,
-          ),
+    return SizedBox(
+      width: double.infinity,
+      height: 40.h,
+      child: MaterialButton(
+        onPressed: buttonAction,
+        color: buttonColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25.r),
+        ),
+        child: Text(
+          buttonText,
+          style: buttonStyle,
         ),
       ),
     );

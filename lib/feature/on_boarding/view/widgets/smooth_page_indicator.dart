@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/theme/app_colors.dart';
-import '../screens/on_boarding.dart';
 
 class PageIndicator extends StatelessWidget {
-  const PageIndicator({super.key});
+  const PageIndicator({super.key, required this.controller});
+  final PageController controller;
 
   @override
   Widget build(BuildContext context) {

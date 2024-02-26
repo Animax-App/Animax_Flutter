@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/app_images.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../widgets/on_boarding_body.dart';
+import '../widgets/on_boarding_texts.dart';
 
 class OnBoardingFirstScreen extends StatelessWidget {
   const OnBoardingFirstScreen({super.key});
@@ -75,11 +75,10 @@ class OnBoardingFirstScreen extends StatelessWidget {
             ),
             //====================================
             //Body.
-            child: const OnBoardingBody(
+            child: const OnBoardingTexts(
               headerText: 'Welcome to AnimaX',
               descriptionText:
                   'The best-streaming anime app of the century to entertain you every day',
-              buttonText: 'Next',
             ),
           ),
           //=======================================
