@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/app_images.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../widgets/on_boarding_body.dart';
+import '../widgets/on_boarding_texts.dart';
 
 class OnBoardingSecondScreen extends StatelessWidget {
   const OnBoardingSecondScreen({super.key});
@@ -14,22 +14,20 @@ class OnBoardingSecondScreen extends StatelessWidget {
       backgroundColor: AppColors.scaffoldBackgroundColor,
       body: Padding(
         padding: EdgeInsets.only(
-          top: 150.h,
+          top: 175.h,
           right: 32.w,
           left: 32.w,
-          bottom: 50.h,
         ),
         child: Column(
           children: [
             Image.asset(
               Assets.imagesOnBoardingImage2,
             ),
-            SizedBox(height: 155.h),
+            SizedBox(height: 150.h),
             const Expanded(
-              child: OnBoardingBody(
+              child: OnBoardingTexts(
                 headerText: 'Download and watch offline',
                 descriptionText: 'Always have something to watch offline',
-                buttonText: 'Next',
               ),
             ),
           ],

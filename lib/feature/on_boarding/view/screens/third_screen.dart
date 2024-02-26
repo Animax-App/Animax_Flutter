@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/app_images.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../widgets/on_boarding_body.dart';
+import '../widgets/on_boarding_texts.dart';
 
 class OnBoardingThirdScreen extends StatelessWidget {
   const OnBoardingThirdScreen({super.key});
@@ -17,7 +17,6 @@ class OnBoardingThirdScreen extends StatelessWidget {
           top: 90.h,
           right: 0,
           left: 0,
-          bottom: 50.h,
         ),
         child: Column(
           children: [
@@ -33,11 +32,10 @@ class OnBoardingThirdScreen extends StatelessWidget {
                   left: 32.w,
                   bottom: 0,
                 ),
-                child: const OnBoardingBody(
+                child: const OnBoardingTexts(
                   headerText: 'Watch everywhere',
                   descriptionText:
-                      'Stream on your phone, tablet, laptop and more',
-                  buttonText: 'Get Started',
+                      'Stream on your phone, tablet, laptop\nand more',
                 ),
               ),
             ),
