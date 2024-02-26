@@ -1,3 +1,4 @@
+import 'package:anime_app/feature/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -5,7 +6,6 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/custom_button.dart';
 import '../widgets/smooth_page_indicator.dart';
-import 'fake_screen.dart';
 import 'first_screen.dart';
 import 'second_screen.dart';
 import 'third_screen.dart';
@@ -58,7 +58,7 @@ class _OnBoardingState extends State<OnBoarding> {
               buttonAction: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const FakeScreen(),
+                  builder: (context) => const LoginScreen(),
                 ),
               ),
               buttonStyle: AppTextStyles.robotoWhite16Medium,
