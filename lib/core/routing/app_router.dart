@@ -1,3 +1,4 @@
+import 'package:anime_app/feature/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../feature/on_boarding/view/screens/first_screen.dart';
@@ -11,7 +12,7 @@ class AppRouter {
     switch (settings.name) {
       case Routes.onBoarding:
         return MaterialPageRoute(
-          builder: (context) => const OnBoarding(),
+          builder: (context) => const LoginScreen(),
         );
       case Routes.onBoardingFirstScreen:
         return MaterialPageRoute(

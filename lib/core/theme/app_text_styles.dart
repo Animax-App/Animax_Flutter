@@ -24,4 +24,12 @@ class AppTextStyles {
       fontWeight: FontWeight.w500,
     ),
   );
+
+  static final robotoWhite20Semi = GoogleFonts.roboto(
+    textStyle: TextStyle(
+      color: Colors.white,
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w500,
+    ),
+  );
 }
