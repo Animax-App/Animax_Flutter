@@ -26,10 +26,12 @@ class Assets {
   static const String svgsOnBoardingSvg3 = "assets/svgs/onBoarding_svg_3.svg";
 
   /// Assets for imagesLogin
-  ///
 /// assets/images/login.png
   static const String imagesLogin = "assets/images/login.png";
 
-  /// Assets for imagesOnBoardingImage1
+
+  /// Assets for socialLoginIcons
+  static const String google = "assets/icons/Google.png";
+  static const String facebook = "assets/icons/Facebook.png";
 }
 
