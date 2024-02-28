@@ -7,7 +7,10 @@ import '../../../../core/theme/app_text_styles.dart';
 import '../screens/sign_up_screen.dart';
 
 class NewToAnime extends StatelessWidget {
-  const NewToAnime({super.key});
+   NewToAnime({super.key, required this.textOne, required this.textTwo,required this.onTap});
+  final String textOne;
+  final String textTwo;
+  void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -17,19 +20,16 @@ class NewToAnime extends StatelessWidget {
         children: [
           RichText(
               text: TextSpan(
-                text: AppText.newToAnima,
+                text: textOne,
                 style: AppTextStyles.robotoGray12Medium,
               )),
           InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const SignUpScreen()));
-            },
+            onTap: onTap,
+
+
             child: RichText(
               text: TextSpan(
-                  text: AppText.signUpNow,
+                  text: textTwo,
                   style: TextStyle(
                     color: AppColors.primaryColor,
                     fontSize: 14.sp,

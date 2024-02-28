@@ -1,4 +1,3 @@
-import 'package:anime_app/feature/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../feature/on_boarding/view/screens/first_screen.dart';

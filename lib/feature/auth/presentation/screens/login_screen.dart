@@ -2,6 +2,7 @@ import 'package:anime_app/core/helpers/app_images.dart';
 import 'package:anime_app/core/helpers/app_text.dart';
 import 'package:anime_app/core/helpers/spacing.dart';
 import 'package:anime_app/core/theme/app_colors.dart';
+import 'package:anime_app/feature/auth/presentation/screens/sign_up_screen.dart';
 import 'package:anime_app/feature/auth/presentation/widgets/custom_text_form_field.dart';
 import 'package:anime_app/feature/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +65,12 @@ class LoginScreen extends StatelessWidget {
                     buttonStyle: AppTextStyles.robotoWhite16Medium,
                   ),
                   verticalSpace(4.h),
-                  const NewToAnime(),
+                   NewToAnime(textOne: AppText.newToAnima,textTwo: AppText.signUpNow,onTap: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignUpScreen()));
+                   }),
                   verticalSpace(10.h),
                   const CustomDivider(
                     text: AppText.orWith,
