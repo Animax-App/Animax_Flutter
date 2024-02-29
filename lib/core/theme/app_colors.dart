@@ -8,4 +8,5 @@ class AppColors {
   static const Color grayColor = Color(0xff979797);
   static const Color linesColor = Color(0xff333333);
   static const Color grayButton = Color(0xff585858);
+  static const Color secondaryColor = Color(0xff5C5C5C);
 }

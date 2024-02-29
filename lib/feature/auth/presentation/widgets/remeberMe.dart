@@ -1,4 +1,3 @@
-import 'package:anime_app/feature/auth/presentation/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/helpers/app_text.dart';
 import '../../../../core/theme/app_colors.dart';

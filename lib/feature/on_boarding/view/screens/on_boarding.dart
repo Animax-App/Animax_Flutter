@@ -1,4 +1,3 @@
-import 'package:anime_app/feature/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -53,13 +52,12 @@ class _OnBoardingState extends State<OnBoarding> {
               right: 24.w,
             ),
             child: CustomButton(
+              height: 40.h,
               buttonText: 'Get Started',
               buttonColor: AppColors.primaryColor,
-              buttonAction: () => Navigator.push(
+              buttonAction: () => Navigator.pushReplacementNamed(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const LoginScreen(),
-                ),
+                'interestsScreen',
               ),
               buttonStyle: AppTextStyles.robotoWhite16Medium,
             ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/routing/app_router.dart';
+import 'core/theme/app_colors.dart';
 
 class AnimaX extends StatelessWidget {
   const AnimaX({super.key});
@@ -18,6 +19,7 @@ class AnimaX extends StatelessWidget {
         onGenerateRoute: AppRouter().onGenerateRoute,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          scaffoldBackgroundColor: AppColors.scaffoldBackgroundColor,
           useMaterial3: true,
         ),
       ),

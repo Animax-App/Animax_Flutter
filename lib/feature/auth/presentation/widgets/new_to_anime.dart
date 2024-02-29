@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/helpers/app_text.dart';
+
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
-import '../screens/sign_up_screen.dart';
 
+
+// ignore: must_be_immutable
 class NewToAnime extends StatelessWidget {
    NewToAnime({super.key, required this.textOne, required this.textTwo,required this.onTap});
   final String textOne;
