@@ -8,27 +8,40 @@ class CustomButton extends StatelessWidget {
     required this.buttonColor,
     required this.buttonAction,
     required this.buttonStyle,
+    required this.height,
+    this.borderSide,
   });
 
   final String buttonText;
   final Color buttonColor;
   final TextStyle buttonStyle;
   final Function() buttonAction;
+  final double height;
+  final BorderSide? borderSide;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 40.h,
+      height: height,
       child: MaterialButton(
         onPressed: buttonAction,
+        padding: EdgeInsets.zero,
         color: buttonColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25.r),
+          side: borderSide ??
+              const BorderSide(
+                width: 0,
+                strokeAlign: 0,
+                color: Colors.transparent,
+              ),
         ),
-        child: Text(
-          buttonText,
-          style: buttonStyle,
+        child: Center(
+          child: Text(
+            buttonText,
+            style: buttonStyle,
+          ),
         ),
       ),
     );

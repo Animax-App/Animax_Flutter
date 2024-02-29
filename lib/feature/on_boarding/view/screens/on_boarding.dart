@@ -5,7 +5,6 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/widgets/custom_button.dart';
 import '../widgets/smooth_page_indicator.dart';
-import 'fake_screen.dart';
 import 'first_screen.dart';
 import 'second_screen.dart';
 import 'third_screen.dart';
@@ -53,13 +52,12 @@ class _OnBoardingState extends State<OnBoarding> {
               right: 24.w,
             ),
             child: CustomButton(
+              height: 40.h,
               buttonText: 'Get Started',
               buttonColor: AppColors.primaryColor,
-              buttonAction: () => Navigator.push(
+              buttonAction: () => Navigator.pushReplacementNamed(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const FakeScreen(),
-                ),
+                'interestsScreen',
               ),
               buttonStyle: AppTextStyles.robotoWhite16Medium,
             ),
