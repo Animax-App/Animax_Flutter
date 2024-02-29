@@ -24,5 +24,23 @@ class Assets {
   /// Assets for svgsOnBoardingSvg3
   /// assets/svgs/onBoarding_svg_3.svg
   static const String svgsOnBoardingSvg3 = "assets/svgs/onBoarding_svg_3.svg";
+
+  /// Assets for imagesLogin
+/// assets/images/login.png
+  static const String imagesLogin = "assets/images/login.png";
+
+  /// Assets for successVerify
+  static const String successVerify = "assets/images/congratulation.png";
+
+
+  /// Assets for socialLoginIcons
+  static const String google = "assets/icons/Google.png";
+  static const String facebook = "assets/icons/Facebook.png";
+
+  /// Assets for imageForgotPassword
+  static const String imageForgotPassword = "assets/images/forgot.png";
+
+  /// Assets for reset
+  static const String reset = "assets/images/reset.png";
 }
 

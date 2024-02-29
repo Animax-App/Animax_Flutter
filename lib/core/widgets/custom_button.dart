@@ -8,7 +8,7 @@ class CustomButton extends StatelessWidget {
     required this.buttonColor,
     required this.buttonAction,
     required this.buttonStyle,
-    required this.height,
+     this.height,
     this.borderSide,
   });
 
@@ -16,7 +16,7 @@ class CustomButton extends StatelessWidget {
   final Color buttonColor;
   final TextStyle buttonStyle;
   final Function() buttonAction;
-  final double height;
+  final double? height;
   final BorderSide? borderSide;
 
   @override
